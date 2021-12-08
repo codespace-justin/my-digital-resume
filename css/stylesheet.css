@@ -1,3 +1,7 @@
+*, ::after, ::before {
+  margin: 0;  
+}
+
 body{
 
     font-size:110%;
@@ -10,30 +14,50 @@ body{
   }
   
   footer {
-
-    background-color: black;
+    padding-top: 30px;
+    background-color: rgb(43, 43, 43);
     color: whitesmoke;
     text-align: center;
+    border: black solid;
   }
 
+  /* Diplays main divs on 1 line */
 
+  #container {
+    display: flex;
+    flex-direction: row;
+
+
+    background-color: rgb(179, 179, 179);
+    border: black solid;
+    margin-top: 30px;
+  }
+
+  /* Makes Aside take 20% of width and Main take up 80% */
+
+  #main {
+    width: 80%;
+  }
+  
+  #nav {
+    width: 20%;
+  }
+
+  /* Sections inside of Main */
 
   .section {
 
     background-color: rgb(179, 179, 179);
     /*border: solid black 5px;*/
 
-    padding: 10px;
-
-    margin-top: 35px;
-    margin-bottom: 40px;
-
-    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
 
   }
 
   ul {
     list-style: none;
+ 
   }
 
   .icon {
@@ -53,8 +77,12 @@ body{
 
   .link {
     color: rgb(0, 255, 234);
+    margin-left: 5px;
+    margin-right: 5px;
   }
 /*
   #main {
     background-color: red;
   }*/
+
+  
